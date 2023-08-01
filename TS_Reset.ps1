@@ -91,3 +91,7 @@ Else
 }
 ## Cleanup of Variables
 Remove-Variable * -ErrorAction SilentlyContinue
+
+## Restart Terminal Services...service
+Write-host -ForegroundColor Red 'Restarting Terminal Services...'
+Restart-Service TermService -force
